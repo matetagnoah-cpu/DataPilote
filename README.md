@@ -1,27 +1,22 @@
 # DataPilote
 
-Application de gestion et d'analyse de données destinée aux PME.
+Application de gestion et d’analyse de données destinée aux PME.
 
 ## Lancement du frontend
 
-Dans le terminal, place-toi dans le dossier frontend :
+Depuis la racine du projet :
 
-```bash
-cd frontend
-npm run dev
- 
-ouvre ensuite ton navigateur a l'adresse
+    cd frontend
+    npm run dev
 
-http://localhost:5173
+Ouvre http://localhost:5173 dans ton navigateur.
 
 ## Lancement du backend
 
-Depuis la racine du projet, dans un autre terminal : 
+Dans un deuxième terminal :
 
-cd backend
-source venv/bin/activate
-uvicorn app.main:app --reload
+    cd backend
+    source venv/bin/activate
+    uvicorn app.main:app --reload
 
-API disponible sur :
-http://127.0.0.1:8000
-EOF
+API disponible sur http://127.0.0.1:8000
