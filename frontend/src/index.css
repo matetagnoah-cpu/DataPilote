@@ -458,3 +458,155 @@ body {
     width: 100%;
   }
 }
+
+
+
+.clients-page {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.clients-kpis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.client-kpi,
+.top-clients,
+.clients-catalogue {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.client-kpi {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.client-kpi span {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.client-kpi strong {
+  font-size: 25px;
+  color: #111827;
+}
+
+.top-clients,
+.clients-catalogue {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top-clients-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.top-client-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 9px;
+  font-size: 14px;
+}
+
+.top-client-info strong {
+  margin-left: auto;
+}
+
+.top-client-rank {
+  background: #eef2ff;
+  color: #4338ca;
+  padding: 5px 10px;
+  border-radius: 7px;
+  font-weight: 700;
+}
+
+.top-client-bar {
+  height: 9px;
+  background: #f3f4f6;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.top-client-progress {
+  height: 100%;
+  background: #4f46e5;
+  border-radius: 20px;
+}
+
+.clients-filters {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.clients-filters input,
+.clients-filters select {
+  padding: 11px 13px;
+  border: 1px solid #e5e7eb;
+  border-radius: 9px;
+  background: white;
+  font-size: 14px;
+}
+
+.clients-filters input {
+  flex: 1;
+  min-width: 220px;
+}
+
+.clients-table-container {
+  overflow-x: auto;
+}
+
+.clients-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+}
+
+.clients-table th,
+.clients-table td {
+  padding: 15px 12px;
+  border-bottom: 1px solid #f0f0f0;
+  white-space: nowrap;
+}
+
+.clients-table th {
+  color: #6b7280;
+  font-weight: 600;
+  background: #f9fafb;
+}
+
+.client-name {
+  font-weight: 600;
+  color: #111827;
+}
+
+.client-email {
+  color: #9ca3af;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+@media (max-width: 900px) {
+  .clients-kpis {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .clients-kpis {
+    grid-template-columns: 1fr;
+  }
+}

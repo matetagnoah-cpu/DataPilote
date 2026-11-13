@@ -6,6 +6,8 @@ import KpiCard from "./components/KpiCard";
 import InsightCard from "./components/InsightCard";
 import RevenueChart from "./components/RevenueChart";
 import Ventes from "./pages/Ventes";
+import { Produits } from './pages/Produits';
+import Clients from "./pages/Clients";
 
 function Dashboard() {
   return (
@@ -72,8 +74,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/ventes" element={<Ventes />} />
-          <Route path="/produits" element={<PlaceholderPage title="Produits" />} />
-          <Route path="/clients" element={<PlaceholderPage title="Clients" />} />
+          <Route path="/produits" element={<Produits/>} />
+          <Route path="/clients" element={<Clients />} />
           <Route path="/vendeurs" element={<PlaceholderPage title="Vendeurs" />} />
           <Route path="/promotions" element={<PlaceholderPage title="Promotions" />} />
           <Route path="*" element={<Navigate to="/" replace />} />
