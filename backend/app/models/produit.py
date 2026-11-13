@@ -16,7 +16,7 @@ class ProduitCreate(ProduitBase):
 
 class ProduitStockUpdate(BaseModel):
     stock: int
-
+    
 class Produit(ProduitBase):
     id: str
     statut: StatutProduit
